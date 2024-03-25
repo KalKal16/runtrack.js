@@ -1,3 +1,4 @@
-window.onload = function() {
-    console.log("Hello Javascript!");
-};
+function bisextile(annee) {
+    return annee % 4 === 0;
+}
+
