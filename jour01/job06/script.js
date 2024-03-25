@@ -1,20 +1,15 @@
-function NombrePremier(nombre) {
-    if (nombre <= 1) {
-        return false;
-    }
-    for (let i = 2; i <= Math.sqrt(nombre); i++) {
-        if (nombre % i === 0) {
-            return false;
+function fizzbuzz() {
+    for (let i = 1; i <= 151; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
         }
     }
-    return true;
 }
 
-function sommeNombresPremiers(nombre1, nombre2) {
-    if (NombrePremier(nombre1) && NombrePremier(nombre2)) {
-        return nombre1 + nombre2;
-    } else {
-        return false;
-    }
-}
-
+fizzbuzz();

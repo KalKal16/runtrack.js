@@ -1,8 +1,20 @@
-function afficherJoursSemaine() {
-    var joursSemaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
-    for (var i = 0; i < joursSemaine.length; i++) {
-        console.log(joursSemaine[i]);
+function NombrePremier(nombre) {
+    if (nombre <= 1) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(nombre); i++) {
+        if (nombre % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function sommeNombresPremiers(nombre1, nombre2) {
+    if (NombrePremier(nombre1) && NombrePremier(nombre2)) {
+        return nombre1 + nombre2;
+    } else {
+        return false;
     }
 }
 
-afficherJoursSemaine();
