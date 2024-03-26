@@ -1,4 +1,3 @@
-// Récupération du textarea
 const keylogger = document.getElementById("keylogger");
 
 document.addEventListener("keydown", function(event) {
