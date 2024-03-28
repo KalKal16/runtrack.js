@@ -1,0 +1,14 @@
+#rainbow {
+    display: flex;
+  }
+  
+  #rainbow img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+  }
+  
+  #shuffleButton {
+    margin-top: 10px;
+  }
+  

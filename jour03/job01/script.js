@@ -1,7 +1,6 @@
-// Sélection du bouton pour afficher le texte
 const hideButton = document.getElementById('hideButton');
 const showButton = document.getElementById('showButton');
-const text = document.getElementById('textContainer');
+const text = document.getElementById('text');
 
 showButton.addEventListener('click', function() {
   text.style.display = 'block';
