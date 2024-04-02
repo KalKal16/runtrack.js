@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="left">
+    <span>Jour 05</span>
+  </div>
+  <div class="right">
+    <a class="btn" href="inscription.html">Inscription</a>
+    <a class="btn" href="connexion.html">Connexion</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Inscription</h2>
+  <div id="form-error" class="error" style="display: none;"></div>
+  <form id="signup-form">
+    <div>
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" required>
+      <span id="nom-error" class="error"></span>
+    </div>
+    <div>
+      <span id="nom-length-error" class="error" style="display: none;">Le nom doit contenir au moins 2 lettres.</span>
+    </div>
+    <div>
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" name="prenom" required>
+      <span id="prenom-error" class="error"></span>
+    </div>
+    <div>
+      <span id="prenom-length-error" class="error" style="display: none;">Le prénom doit contenir au moins 2 lettres.</span>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" >
+      <span id="email-error" class="error"></span>
+      <span id="email-format-error" class="error" style="display: none;">L'adresse email doit contenir au moins un "@" et un ".".</span>
+    </div>
+    <div>
+      <label for="password">Mot de passe:</label>
+      <input type="password" id="password" name="password" >
+      <span id="password-error" class="error"></span>
+      <span id="password-length-error" class="error" style="display: none;">Le mot de passe doit contenir au moins 7 caractères.</span>
+    </div>
+    <div>
+      <label for="conf-password">Confirmation mot de passe:</label>
+      <input type="password" id="conf-password" name="conf-password" >
+      <span id="conf-password-error" class="error"></span>
+      <span id="conf-password-match-error" class="error" style="display: none;">Les mots de passe ne correspondent pas.</span>
+    </div>
+    <button type="submit">S'inscrire</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

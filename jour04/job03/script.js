@@ -18,7 +18,7 @@ function afficherResultat(resultat) {
     resultatDiv.innerHTML = '';
 
     if (resultat.length === 0) {
-        resultatDiv.textContent = "Aucun résultat trouvé.";
+        resultatDiv.textContent = "Aucun résultat ";
     } else {
         const ul = document.createElement('ul');
         resultat.forEach(element => {
