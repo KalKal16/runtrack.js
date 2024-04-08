@@ -1,0 +1,14 @@
+[
+    {
+        "email": "utilisateur1@laplateforme.io",
+        "password": "motdepasse1"
+    },
+    {
+        "email": "utilisateur2@laplateforme.io",
+        "password": "motdepasse2"
+    },
+    {
+        "email": "utilisateur3@laplateforme.io",
+        "password": "motdepasse3"
+    }
+]

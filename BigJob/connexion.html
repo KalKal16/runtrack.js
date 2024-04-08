@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Adresse email:</label>
+                <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Mot de passe:</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+            <div id="loginMessage"></div>
+        </form>
+        <div id="signupMessage" class="mt-3"></div>
+        <p class="mt-3">Pas inscrit ? <a href="inscription.html">Inscrivez-vous ici</a></p>
+    <script src="Js/connexion-script.js"></script>
+</body>
+</html>
